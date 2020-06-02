@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.is-completed {
+  text-decoration: line-through;
+}
+
+body {
+  font-family: Roboto !important;
+}
+
+.header {
+  border-bottom: 1px solid #F0F3F5;
+}
