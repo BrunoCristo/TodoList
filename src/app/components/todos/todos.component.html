@@ -2,9 +2,11 @@
 <div class="container pt-5">
   <div class="row">
     <div class="col-12 justify-content-center">
-      <div class="card">
-        <div class="card-body">
+      <div class="card shadow-sm">
+        <div class="card-header py-0">
           <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+        </div>
+        <div class="card-body">
           <app-todo-item
             *ngFor="let todo of todos"
             [todo]="todo"

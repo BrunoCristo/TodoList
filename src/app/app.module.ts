@@ -11,8 +11,6 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { AboutComponent } from './components/pages/about/about.component';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +25,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

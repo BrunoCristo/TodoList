@@ -29,9 +29,7 @@ export class TodoItemComponent implements OnInit {
   }
 
   onToggle(todo) {
-
     todo.completed = !todo.completed;
-
     this.todoService.toggleCompleted(todo).subscribe(todo => console.log(todo))
   }
 
@@ -39,4 +37,7 @@ export class TodoItemComponent implements OnInit {
     this.deleteTodo.emit(todo);
   }
 
+  onEdit(todo) {
+    console.log(todo);
+  }
 }

@@ -1,14 +1,16 @@
 <div [ngClass]="setClasses()">
   <div class="form-group">
     <div class="row align-items-center">
-      <div class="col-md-8 col-sm-8">
+      <div class="col-8">
         <input (change)="onToggle(todo)" type="checkbox"/>
+        <input type="hidden" [(ngModel)]="todo.id"/>
         {{todo.title}}
       </div>
-      <div class="col-md-4 col-sm-4">
+      <div class="col-4">
         <button (click)="onDelete(todo)" class="btn btn-danger btn-sm badge float-right"><i class="fas fa-times"></i></button>
-        <button (click)="onDelete(todo)" class="btn btn-primary btn-sm badge float-right mr-1"><i class="fas fa-pencil-alt"></i></button>
+        <button (click)="onEdit(todo)" class="btn btn-primary btn-sm badge float-right mr-1"><i class="fas fa-pencil-alt"></i></button>
       </div>
     </div>
   </div>
+  <hr>
 </div>

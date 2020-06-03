@@ -9,6 +9,5 @@ export class AppComponent {
   title = 'todolist';
 
   constructor(){
-    console.log('23')
   }
 }
